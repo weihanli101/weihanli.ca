@@ -1,0 +1,427 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+.navbar .nav > li > a:hover {
+  color:#aeb7c8;
+}
+a.active {
+  border-bottom: 5px solid #aeb7c8;
+  border-radius: 10px;
+}
+.navbar .nav > li > a {
+    color:  #fff;
+}
+
+/* Custom default button */
+.btn-default
+.btn-default:hover{
+  color: #aeb7c8;
+}
+.btn-default:focus {
+  color: #aeb7c8;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+
+}
+.navbar-brand{
+  padding-bottom: 50px;
+}
+@font-face{
+  font-family: techfont;
+  src:url(../fonts/tech.ttf);
+}
+@font-face{
+  font-family: techfontother;
+  src:url(../fonts/techfont2.ttf);
+}
+@font-face{
+  font-family: chiller;
+  src:url(../fonts/chiller.TTF);
+}
+@font-face{
+  font-family: tech_real;
+  src:url(../fonts/tech_reaL.ttf);
+}
+#navbar-background {
+  background: linear-gradient(rgba(0,0,0,1) ,rgba(0,0,0,0));
+  border-bottom: 0px;
+  font-family: sans-serif;
+}
+#navbar_text {
+  font-family: tech_real;
+  font-size: 20px;
+  font-weight: 10;
+}
+html,
+/*================================HOMEPAGE BODY START================================*/
+body#homepage {
+  height: 100%;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+body#about {
+  background: url(../assets/service_text.png);
+  background-color: #404040;
+}
+body#careers {
+  background-color: #404040;
+}
+body#gallary {
+  height: 100%;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  background-color: #404040;
+}
+body#contact{
+}
+
+
+
+.fullscreen-bg iframe {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url(../assets/homepagecover.jpg) center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+
+#home-middlecaption {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,1);
+}
+@media (max-width: 767px){
+  #home-middlecaption {
+  color: #fff;
+  padding-top: 300px;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,1);
+ }
+}
+@media (max-width: 320px){
+  #home-middlecaption {
+  color: #fff;
+  padding-top: 200px;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,1);
+ }
+}
+#homepage-featurettes {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background:rgba(0, 0, 0,0.7);
+  width: 100%;
+  text-align: center;
+}
+#btn_learn{
+  text-shadow: none; 
+  color: #660066;
+  border-radius: 25px;
+}
+#icon_1{
+  height: auto; 
+    width: auto; 
+    max-width: 100px; 
+    max-height: 100px;
+}
+#icon_2{
+  height: auto; 
+    width: auto; 
+    max-width: 100px; 
+    max-height: 100px;
+}
+/*================================HOMEPAGE BODY END================================*/
+
+/*================================SERVICES START================================*/
+#aboutJumbo {
+  padding-top: 300px;
+  background-color: black;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../assets/servicescover.jpg);
+  background-size: cover;
+  height: 100%;
+}
+#about-featurettes {
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+#text_border {
+  background:rgba(0, 0, 0,0.3);
+  border-radius: 25px;
+}
+#service_text {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+#img_services {
+  border-style: solid; 
+  border-width: 10px; 
+  border-radius: 25px;
+}
+/*================================SERVICES END================================*/
+
+/*=================================CAREERS START================================*/
+#text_career {
+  background:rgba(0, 0, 0,0.3);
+  border-radius: 25px;
+  text-align: center;
+}
+#careerJumbo {
+  padding-top: 300px;
+  background-color: black;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../assets/career_cover.jpg);
+  background-size: cover;
+  height: 100%;
+}
+/*=================================CAREERS END================================*/
+
+/*=================================GALLARY START===============================*/
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+
+#slide1-img {
+  padding-top: 300px;
+  background-color: black;
+  background-image: url(../assets/cara1.jpg);
+  background-size: cover;
+  height: 100%;
+}
+#slide2-img {
+  padding-top: 300px;
+  background-color: black;
+  background-image: url(../assets/cara2.JPG);
+  background-size: cover;
+  height: 100%;
+}
+#slide3-img {
+  padding-top: 300px;
+  background-color: black;
+  background-image: url(../assets/cara3.jpg);
+  background-size: cover;
+  height: 100%;
+}
+#slide4-img {
+  padding-top: 300px;
+  background-color: black;
+  background-image: url(../assets/cara4.jpg);
+  background-size: cover;
+  height: 100%;
+}
+#slide5-img {
+  padding-top: 300px;
+  background-color: black;
+  background-image: url(../assets/cara5.jpg);
+  background-size: cover;
+  height: 100%;
+}
+#slide6-img {
+  padding-top: 300px;
+  background-color: black;
+  background-image: url(../assets/cara6.JPG);
+  background-size: cover;
+  height: 100%;
+}
+#slide7-img {
+  padding-top: 300px;
+  background-color: black;
+  background-image: url(../assets/cara7.JPG);
+  background-size: cover;
+  height: 100%;
+}
+#landJumbo {
+  background-color: black;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../assets/gallary_cover.jpg);
+  background-size: cover;
+  height: 100%;
+}
+#cara_gallary {
+  border: solid 30px;
+  border-radius: 25px;
+  border-color: rgba(0, 0, 0,0.3);
+}
+@media (max-width: 320px){
+  #landJumbo {
+  padding-top:170px;
+  background-color: black;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../assets/gallary_cover.jpg);
+  background-size: cover;
+  height: 100%;
+}
+}
+@media (max-width: 767px){
+  #landJumbo {
+  padding-top:200px;
+  background-color: black;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../assets/gallary_cover.jpg);
+  background-size: cover;
+  height: 100%;
+}
+}
+@media (max-width: 2000px){
+  #landJumbo {
+  padding-top:300px;
+  background-color: black;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../assets/gallary_cover.jpg);
+  background-size: cover;
+  h
+}
+/*=================================GALLARY END===============================*/
+
+/*================================CONTACT START==============================*/
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#marketing_paragraphs {
+  color: white;
+}
+#contact_top {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+#marketing_container {
+  padding-top: 30px;
+  border-radius: 25px;
+  background:rgba(0, 0, 0,0.3);
+}
+#contactJumbo {
+  background-color: rgba(0, 0, 0,0.3);
+  color:white;
+  padding-top: 100px;
+}
+/*================================CONTACT END==============================*/
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
