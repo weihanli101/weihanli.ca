@@ -14,7 +14,7 @@ html {
 @media(min-width:767px) {
     .navbar {
         /*navbar glass css */
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 1);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         border-bottom: 0px;
         /* navbar growing css */
@@ -27,7 +27,7 @@ html {
     }
     .top-nav-collapse {
         padding: 0;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 1);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.09);
         border-bottom: 0px;
     }
